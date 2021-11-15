@@ -25,29 +25,30 @@
 				</div class="card">
 				<form class="forminput validate-form" action="/device_binding" method="POST" name="binding">
 					<div class="h5">
-						HI!{{name}}!
+						HI!Sam
 					</div>
-					<div class="wrap-input validate-input userID m-b-26 alert-validate" data-validate="Device name is required">
-						<input class="input" type="text" name="device_name" id="device_name" placeholder="Device name">
-						<span class="focus-input"></span>
+					<div class="wrap-input m-b-26">
+						<input class="input" type="text" name="device_name" id="device_name" placeholder="Device name" value="Camera001" disabled>
 					    <span class=""><i class="fa fa-tablet"></i>
 					</div>
 
-					<div class="wrap-input validate-input pin m-b-18 alert-validate" data-validate = "Serial number is required">
-						<input class="input" type="text" name="regis_code" id="regis_code" placeholder="Serial number">
-					    <span class="focus-input"></span>
+					<div class="wrap-input m-b-18">
+						<input class="input" type="text" name="regis_code" id="regis_code" placeholder="Serial number" value="123456780000" disabled>
 					    <span class=""><i class="fa fa-barcode"></i>
 
 					</div>
 
 					<div class="flex-sb-m w-full p-b-30">
-					<div class="container-binding-form-btn">
-						<button class="binding-form-btn" type="submit" onclick="javascipt:{this.disabled=true;document.binding.submit();}">
-							Binding
+					 <div class="container-binding-form-btn">
+						<button class="binding-form-btn" type="submit" onclick="">
+							Back To Home
 						</button>
 					</div>
+			     </div>
+					<div class="message">
+						The device has been bound！
+					</div>
 				</form>
-		       	</div>
 		       	<div class="small footer w-100">
 					© 2021 Designed by <a href="#">Vattensoft</a> Co., Ltd.
 				</div>
@@ -57,7 +58,7 @@
 		</div>
 	</div>
 {% endblock %}
-
+	
 	<script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
 
 </body>
